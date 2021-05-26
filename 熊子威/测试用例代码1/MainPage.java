@@ -11,13 +11,13 @@ public class MainPage {
 	AndroidDriver<AndroidElement> driver;
 	BaseAction action;
 
-//	¹¹Ôì·½·¨
+//	æ„é€ æ–¹æ³•
 	public MainPage(AndroidDriver<AndroidElement> driver) {
 		this.driver = driver;
 		this.action = new BaseAction(driver);
 	}
 
-//	Ò³Ãæ¶ÔÏó
+//	é¡µé¢å¯¹è±¡
 	public AndroidElement btn_dynasty_know() {
 		return driver.findElementById("net.onest.timestoryprj:id/btn_dynasty_know");
 	}
@@ -82,7 +82,7 @@ public class MainPage {
 		return driver.findElementById("net.onest.timestoryprj:id/btn_recollect");
 	}
 
-//	Ò³Ãæ²Ù×÷·½·¨
+//	é¡µé¢æ“ä½œæ–¹æ³•
 	public String skip_fail1() {
 		action.click(btn_qinchao());
 		action.click(btn_dynasty_know());
